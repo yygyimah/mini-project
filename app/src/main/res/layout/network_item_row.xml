@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="@dimen/margin_5"
+    app:cardElevation="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:padding="@dimen/padding_10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/person"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:layout_marginStart="@dimen/margin_5"
+            android:layout_marginEnd="@dimen/margin_5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_15"
+            tools:text="Kwame Gyimah" />
+
+        <TextView
+            android:id="@+id/headline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:layout_marginTop="@dimen/margin_5"
+            android:gravity="center"
+            android:textSize="@dimen/font_13"
+            tools:text="Software engineer" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_marginTop="@dimen/margin_5"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/margin_15"
+            android:layout_marginEnd="@dimen/margin_15"
+            android:layout_height="wrap_content"
+            app:cornerRadius="@dimen/margin_25"
+            app:backgroundTint="@color/white"
+            app:strokeWidth="1dp"
+            app:strokeColor="@color/purple_700"
+            android:textColor="@color/purple_700"
+            android:text="@string/connect"
+            android:id="@+id/connect_btn"
+            android:layout_below="@id/headline"/>
+
+
+    </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

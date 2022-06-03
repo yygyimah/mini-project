@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "445998893005",
+    "project_id": "lavori-18cb5",
+    "storage_bucket": "lavori-18cb5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445998893005:android:aa571edc59eb9cc93fe684",
+        "android_client_info": {
+          "package_name": "com.gyimah.lavori"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445998893005-vgs87g2u3gvk4dntad4eg9et5mud19rf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDish-nV_CCm02RZ6Ol3PizDCQA9_qDbio"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445998893005-vgs87g2u3gvk4dntad4eg9et5mud19rf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

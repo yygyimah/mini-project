@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_5">
+
+    <LinearLayout
+        android:layout_marginStart="@dimen/margin_5"
+        android:id="@+id/search_layout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:src="@drawable/person"
+            app:civ_border_width="1dp"
+            android:layout_weight="4"
+            android:layout_marginEnd="@dimen/margin_5"
+            app:civ_border_color="@color/white"/>
+
+
+        <EditText
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="@dimen/margin_10"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_5"
+            android:hint="@string/search"
+            android:id="@+id/search"
+            android:background="@drawable/edittext_bg"/>
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_weight="4"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_message"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:labelVisibilityMode="unlabeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+    <fragment
+        android:id="@+id/nav_host_fragment_activity_main"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_layout"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/mobile_navigation" />
+
+</RelativeLayout>
