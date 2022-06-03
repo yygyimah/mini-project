@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/margin_5"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/role"
+        tools:text="Mobile Engineer"
+        android:textSize="@dimen/font_15"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_below="@id/role"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/company"
+        tools:text="Turntabl"
+        android:textSize="@dimen/font_13"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_below="@id/company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location"
+        tools:text="Accra"
+        android:textSize="@dimen/font_13"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <TextView
+        android:layout_marginTop="@dimen/margin_5"
+        android:layout_below="@id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/posted_at"
+        tools:text="10:00"
+        android:textSize="@dimen/font_13"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+
+
+
+</RelativeLayout>

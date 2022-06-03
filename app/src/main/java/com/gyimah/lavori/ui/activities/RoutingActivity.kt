@@ -35,7 +35,7 @@ class RoutingActivity : AppCompatActivity() {
 
         val firebaseUser = firebaseAuth.currentUser
 
-        loginViewModel.getUser(firebaseUser?.uid ?: "")
+        loginViewModel.getUser(firebaseUser?.uid ?: "no_user")
 
         loginViewModel.accountState.observe(this) {
             Log.i("ROUTING ACCOUNT", it.toString())

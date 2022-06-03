@@ -24,7 +24,7 @@ class UserRepository @Inject constructor(
     fun getUsers(authId: String) {
         val users = mutableListOf<User>()
         firebaseFirestore.collection(Constants.USERS)
-//            .whereNotEqualTo("id",  authId)
+            .whereNotEqualTo("id",  authId)
             .addSnapshotListener {snapshot, e ->
                 if (e != null) {
                     Log.e("USERS REPO", e.message!!)

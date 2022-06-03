@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseUser
+import com.gyimah.lavori.R
 import com.gyimah.lavori.adapters.NetworkAdapter
 import com.gyimah.lavori.databinding.FragmentNetworkBinding
 import com.gyimah.lavori.viewmodels.DashboardViewModel
@@ -68,6 +69,18 @@ class NetworkFragment : Fragment() {
                 binding.refresh.isRefreshing = false
 
                 networkAdapter.setUsers(it)
+
+
+                when (it.size) {
+                    0 -> {
+                        recyclerView.visibility = View.GONE
+                        binding.txtMessage.visibility = View.VISIBLE
+                    }
+                    else -> {
+                        recyclerView.visibility = View.VISIBLE
+                        binding.txtMessage.visibility = View.GONE
+                    }
+                }
 
             }
 

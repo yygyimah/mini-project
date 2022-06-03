@@ -32,6 +32,10 @@
         <activity
             android:name=".ui.activities.MainActivity"
             android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.activities.PostJobActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
     </application>
 
 </manifest>

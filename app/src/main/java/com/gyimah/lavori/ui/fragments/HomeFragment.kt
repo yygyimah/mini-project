@@ -66,7 +66,10 @@ class HomeFragment : Fragment(), ItemClickListener, PostLikeShareListener {
 
         postViewModel.postState.observe(requireActivity()) {
 
-            binding.refresh.isRefreshing = false
+            if(_binding != null) {
+                binding.refresh.isRefreshing = false
+            }
+
 
             postAdapter.setPosts(it)
 
@@ -75,11 +78,13 @@ class HomeFragment : Fragment(), ItemClickListener, PostLikeShareListener {
 
         postViewModel.errorMessageState.observe(requireActivity()) {
 
-            binding.refresh.isRefreshing = false
+           if (_binding != null) {
+               binding.refresh.isRefreshing = false
 
-            if (it != null) {
-                Toast.makeText(requireView().context, it, Toast.LENGTH_SHORT).show()
-            }
+               if (it != null) {
+                   Toast.makeText(requireView().context, it, Toast.LENGTH_SHORT).show()
+               }
+           }
         }
 
         binding.refresh.setOnRefreshListener {

@@ -37,4 +37,13 @@
     <string name="full_name">%1$s %2$s</string>
     <string name="post_content_summary">%1$s …</string>
     <string name="no_network">No Network</string>
+    <string name="no_users">No Users Available</string>
+    <string name="company_type">%1$s (%2$s)</string>
+    <string name="no_jobs">No Jobs Available</string>
+    <string name="add_job">Add Job</string>
+    <string name="job_title">Job Title</string>
+    <string name="company">Company</string>
+    <string name="workplace_type">Workplace Type</string>
+    <string name="location">Location</string>
+    <string name="post_job">Post Job</string>
 </resources>
